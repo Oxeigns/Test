@@ -6,5 +6,5 @@ def get_credentials():
     session_string = input("Enter your Pyrogram Session String (optional, press enter to login via phone): ")
     return api_id, api_hash, session_string
 
-WORDS_TO_SEND = ["Hello", "Kaise ho?", "Automated Message"]
+WORDS_TO_SEND = ["Hello", "Kaise ho?", "Automated Message" ]
 DELAY = 2 

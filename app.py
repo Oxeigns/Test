@@ -1,4 +1,10 @@
-API_ID = 1234567  # Apna API ID yaha dale
-API_HASH = "aapka_api_hash_yaha"
-WORDS_TO_SEND = ["Hello", "Kaise ho?", "Automated Message", "Test 123"]
-DELAY = 2  # Har message ke beech kitne seconds ka gap chahiye
+import os
+
+def get_credentials():
+    api_id = input("Enter your API ID: ")
+    api_hash = input("Enter your API HASH: ")
+    session_string = input("Enter your Pyrogram Session String (optional, press enter to login via phone): ")
+    return api_id, api_hash, session_string
+
+WORDS_TO_SEND = ["Hello", "Kaise ho?", "Automated Message"]
+DELAY = 2 
